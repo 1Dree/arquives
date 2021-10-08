@@ -1,0 +1,61 @@
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.form-wrapper {
+  padding: 0 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-wrapper h1,
+.form-wrapper h2,
+.form-wrapper h3 {
+  font-weight: normal;
+  color: rgb(50, 50, 50);
+}
+
+.form {
+  display: grid;
+  grid-gap: 40px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.form .instruction {
+  /* font-weight: bold; */
+  color: rgb(60, 60, 60);
+}
+
+.form .err-msg {
+  padding: 14px;
+  color: rgb(253, 49, 49);
+  background-color: rgba(253, 49, 49, 0.186);
+}
+
+.form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(44, 44, 255);
+}
+
+.form button:active {
+  transform: scale(0.99);
+}

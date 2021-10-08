@@ -1,0 +1,70 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.item:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.item .item-icon img {
+  cursor: pointer;
+}
+
+.item-props {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  /* align-items: center; */
+
+  width: 100%;
+}
+
+.item-props p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: rgb(80, 80, 80);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+.item-props p.abridge:hover {
+  z-index: 2;
+  width: fit-content;
+  overflow: none;
+  text-overflow: clip;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item-props .delete-item {
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+  color: rgb(255, 51, 51);
+}
+
+.item:hover .delete-item {
+  opacity: 1;
+}
+
+.item-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.item-icon img {
+  width: 100%;
+  height: 100%;
+}

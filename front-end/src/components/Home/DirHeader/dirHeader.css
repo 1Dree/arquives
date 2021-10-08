@@ -1,0 +1,109 @@
+#dir-header {
+  margin-bottom: 25px;
+}
+
+#dir-header #search-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#search-actions {
+  margin-bottom: 10px;
+}
+
+#search-actions input {
+  flex: none;
+
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search-actions nav ul {
+  position: relative;
+
+  list-style-type: none;
+  list-style-position: inside;
+
+  display: flex;
+  align-items: center;
+}
+
+#search-actions nav ul li {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+#search-actions nav ul li:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+#search-actions nav ul li.disabled {
+  cursor: auto;
+}
+
+#search-actions nav ul li.disabled:hover {
+  background-color: white;
+}
+
+li#new-file input {
+  display: none;
+}
+
+li#new-file label {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li#delete-item #deletion-type {
+  position: absolute;
+  top: 27px;
+  right: -45px;
+
+  display: grid;
+  gap: 5px;
+
+  transition: all 0.3s;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  padding: 10px;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+li#delete-item #deletion-type.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#deletion-type p {
+  width: fit-content;
+  font-size: 14px;
+}
+
+#deletion-type p:hover {
+  color: gray;
+}
+
+#dir-header #path {
+  text-align: left;
+}
+
+#path h2 {
+  font-weight: normal;
+}
