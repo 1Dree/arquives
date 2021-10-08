@@ -15,6 +15,9 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://myarquives.netlify.app/");
+});
 app.use(methodOverride("_method"));
 
 mongoose
