@@ -2,8 +2,6 @@ export default async function testAuth() {
   const accessToken = localStorage.getItem("accessToken");
   if (!accessToken) return;
 
-  console.log(accessToken);
-
   try {
     const response = await fetch(
       `${process.env.REACT_APP_SERVER_URL}/user/auth-test`,

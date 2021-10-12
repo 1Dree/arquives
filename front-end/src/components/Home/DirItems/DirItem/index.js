@@ -14,9 +14,11 @@ export default function DirItem({ item }) {
     e.stopPropagation();
     loadingStateSwitch();
 
+    console.log(item, item.id);
+
     try {
       item.type === "file"
-        ? await deleteFile(item.id)
+        ? await deleteFile(item._id)
         : await deleteFolder(item._id, item.path);
     } catch (err) {
       alert(err);
